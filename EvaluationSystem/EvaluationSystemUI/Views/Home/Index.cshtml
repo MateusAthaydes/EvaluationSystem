@@ -1,7 +1,22 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-<h3>Hello World!</h3>
+<div>
+    <h1>Welcome to Web Evaluation System!</h1>
+</div>
+<form>
+    <div>
+        <p>Please, select wich one you are:</p>
+        <div id="radGroupId">
+            <input type="radio" name="chooseProfile" value="Teacher"> Teacher
+            <br />
+            <input type="radio" name="chooseProfile" value="Student"> Student
+        </div>
+    </div>
+    <br />
+    <div>
+        <input type="button" id="confirmBtn" name="confirm" value="Confirm!" onclick="goToSelectedPage()" />
+    </div>
+</form>
+<script type="text/javascript" src="~/Scripts/JS/Home/Index.js"></script>
